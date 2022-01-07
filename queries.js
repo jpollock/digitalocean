@@ -2,7 +2,7 @@ const fs = require('fs');
 const Pool = require('pg').Pool
 const pool = new Pool({
   user: 'doadmin',
-  host: 'private-db-postgresql-nyc1-33441-do-user-10531769-0.b.db.ondigitalocean.com',
+  host: 'db-postgresql-nyc1-33441-do-user-10531769-0.b.db.ondigitalocean.com',
   database: 'defaultdb',
   password: '1xHb7dN9hdLaJ0VT',
   port: 25060,
