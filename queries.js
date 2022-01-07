@@ -2,13 +2,13 @@ const fs = require('fs');
 const Pool = require('pg').Pool
 const pool = new Pool({
   user: 'doadmin',
-  host: 'db-postgresql-nyc1-33441-do-user-10531769-0.b.db.ondigitalocean.com',
+  host: 'private-db-postgresql-nyc1-33441-do-user-10531769-0.b.db.ondigitalocean.com',
   database: 'defaultdb',
   password: '1xHb7dN9hdLaJ0VT',
   port: 25060,
   ssl:  {
     rejectUnauthorized : false,
-    cert : fs.readFileSync("/Users/jeremypollock/Downloads/ca-certificate.crt").toString(),
+    cert : fs.readFileSync("ca-certificate_prod.crt").toString(),
 }})
 
 const getCounterById = (request, response) => {
